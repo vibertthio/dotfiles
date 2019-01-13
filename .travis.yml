@@ -1,0 +1,13 @@
+os:
+  - osx
+  - linux
+language: bash
+sudo: required
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then echo osx "$TRAVIS_OS_NAME"
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo linux "$TRAVIS_OS_NAME"
+before_script
+  - echo "$TRAVIS_OS_NAME"
+script:
+  - echo "$TRAVIS_OS_NAME"
+  - make "$TRAVIS_OS_NAME"
