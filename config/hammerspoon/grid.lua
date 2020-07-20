@@ -1,4 +1,4 @@
-hs.grid.setGrid'3x3'
+hs.grid.setGrid'2x2'
 hs.grid.setMargins("0,0")
 hs.window.animationDuration = 0
 
