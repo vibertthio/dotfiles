@@ -70,6 +70,12 @@ cask-apps: brew
 	defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
 	for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
 
+vscode-install:
+	for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
+
+vscode-uninstall:
+	for EXT in $$(cat install/Codefile); do code --uninstall-extension $$EXT; done
+
 node-packages: npm
 	. $(NVM_DIR)/nvm.sh; npm install -g $(shell cat install/npmfile)
 
