@@ -24,6 +24,7 @@ cask "rectangle"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
+cask "emacs"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 cask "qlcolorcode"
